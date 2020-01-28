@@ -4,13 +4,12 @@ Create a subnet, consisting of a T1 router and a segment, which auto-connects to
 - Master branch contains module for terraform 0.12 and later
   ```hcl
   module "nsx-t" {
-    source = "git::https://github.com/shawnho1018/terraform-nsxt/"
-    nsxt_tz_overlay = "${var.nsxt_tz_overlay}"
-    nsxt_edgecluster = "${var.nsxt_edgecluster}"
-    nsxt_t0 = "${var.nsxt_t0}"
-    subnet = "${var.subnet}"
+    source = "shawnho1018/nsxt/vsphere"
+    version = "0.1.0"
+    ...
   }
   ```
+  No Implementation for terraform 0.11-. 
 ## Config options
 
 | Variable | Description | Required | Default |
