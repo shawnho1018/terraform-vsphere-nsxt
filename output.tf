@@ -7,3 +7,9 @@ output "transportzone-id" {
 output "t0-id" {
   value = data.nsxt_logical_tier0_router.tier0_router
 }
+output "t1-name" {
+  value = nsxt_logical_tier1_router.tier1_router.display_name
+}
+output "segment-name" {
+  value = nsxt_logical_switch.switch1.display_name 
+}
